@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="">
+        <style>
+            body{ 
+                text-align: center;
+                width: 800px;
+                margin: 0 auto;
+            }
+            ul{
+                text-align: left;
+            }
+            h1{
+                margin: 20px auto;
+            }
+        </style>  
+    </head>
+    <body>
+        <header>
+            <h1 >Conversor de monedas</h1>
+        </header>
+        <body >
+            <form>
+                <label for="fecha" >Fecha en MM-DD-AAAA:</label>
+                <input type="date" id="fecha" name="fecha">
+                <!-- <select name="fecha" id="fecha">
+
+                </select> -->
+                <label for="lname">Base monetaria:</label>                  
+                <!-- <input type="text" id="base" name="base"><br><br> -->
+                <select name="base" id="base">
+
+                </select>
+                <button type="button">Buscar</button>
+              </form>
+              <ul id="monedas">
+                    <!-- acá deberían ir las distintas monedas -->
+              </ul>
+        </body>
+
+        <script src="node_modules/jquery/dist/jquery.slim.js" async defer></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" async defer></script>
+        <script src="src/index.js" ></script>
+    </body>
+</html>
